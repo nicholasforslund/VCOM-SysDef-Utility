@@ -10,7 +10,7 @@
 				<String>Example Project</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.123</String>
+				<String>1.0.0.127</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -1777,6 +1777,31 @@ NW Descriptor: VCOM_Example_CAN_FD.dbc
 											</Property>
 										</Properties>
 										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="ACC_NEW_SIGNAL" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="bb343d74-933f-48df-937f-1bb0062b4bfd" RowDim="1" ColDim="1" Units="" BitFields="1">
+										<Description />
+										<Properties>
+											<Property Name="user.CD.Channel.REString">
+												<String>CAN_Sender_Rx.ACC.ACC_ESP_E2E_PR2.ACC_NEW_SIGNAL</String>
+											</Property>
+											<Property Name="user.CD.Max Value">
+												<Double>1000</Double>
+											</Property>
+											<Property Name="user.CD.Min Value">
+												<Double>0</Double>
+											</Property>
+											<Property Name="user.CD.Data Type">
+												<U32>0</U32>
+											</Property>
+										</Properties>
+										<Errors>
+											<Error Key="VCOM_SIGNAL_DEPRECATED" IsError="true" Code="-1234">
+												<Message>VCOM signal deprecated, recommend deleting node: Targets/Controller/Custom Devices/VCOM/CAN_Sender_Rx/ACC/ACC_ESP_E2E_PR2/ACC_NEW_SIGNAL</Message>
+											</Error>
+										</Errors>
 										<DefaultValue>
 											<Elem>0</Elem>
 										</DefaultValue>
@@ -4614,6 +4639,31 @@ NW Descriptor: VCOM_Example_CAN_FD.dbc
 											<Elem>0</Elem>
 										</DefaultValue>
 									</Channel>
+									<Channel Name="ACC_NEW_SIGNAL" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="4244cab9-1d66-4662-8c7d-35e2654be2d6" RowDim="1" ColDim="1" Units="" BitFields="1">
+										<Description />
+										<Properties>
+											<Property Name="user.CD.Channel.REString">
+												<String>ESP_Rx.ACC.ACC_ESP_E2E_PR2.ACC_NEW_SIGNAL</String>
+											</Property>
+											<Property Name="user.CD.Max Value">
+												<Double>1000</Double>
+											</Property>
+											<Property Name="user.CD.Min Value">
+												<Double>0</Double>
+											</Property>
+											<Property Name="user.CD.Data Type">
+												<U32>0</U32>
+											</Property>
+										</Properties>
+										<Errors>
+											<Error Key="VCOM_SIGNAL_DEPRECATED" IsError="true" Code="-1234">
+												<Message>VCOM signal deprecated, recommend deleting node: Targets/Controller/Custom Devices/VCOM/ESP_Rx/ACC/ACC_ESP_E2E_PR2/ACC_NEW_SIGNAL</Message>
+											</Error>
+										</Errors>
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
 								</Section>
 								<Section Name="NM_ACC" TypeGUID="3837d955-304b-4051-ba25-d001162bd16e" Identifier="17e84a69-8cd8-4885-820f-3741877726e5">
 									<Description />
@@ -6634,6 +6684,34 @@ NW Descriptor: VCOM_Example_CAN_FD.dbc
 										<Errors />
 										<DefaultValue>
 											<Elem>1</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="ACC_NEW_SIGNAL" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="07b1670f-6d37-440c-a60f-0f1a7970e758" RowDim="1" ColDim="1" Units="" BitFields="3">
+										<Description />
+										<Properties>
+											<Property Name="user.CD.Channel.REString">
+												<String>CAN_Sender_Tx.ACC.ACC_ESP_E2E_PR2.ACC_NEW_SIGNAL</String>
+											</Property>
+											<Property Name="user.CD.Max Value">
+												<Double>1000</Double>
+											</Property>
+											<Property Name="user.CD.Min Value">
+												<Double>0</Double>
+											</Property>
+											<Property Name="user.CD.Data Type">
+												<U32>1</U32>
+											</Property>
+											<Property Name="DataSource">
+												<DataSourceNode Channel="Targets/Controller/User Channels/User Channel 1" />
+											</Property>
+										</Properties>
+										<Errors>
+											<Error Key="VCOM_SIGNAL_DEPRECATED" IsError="true" Code="-1234">
+												<Message>VCOM signal deprecated, recommend deleting node: Targets/Controller/Custom Devices/VCOM/CAN_Sender_Tx/ACC/ACC_ESP_E2E_PR2/ACC_NEW_SIGNAL</Message>
+											</Error>
+										</Errors>
+										<DefaultValue>
+											<Elem>0</Elem>
 										</DefaultValue>
 									</Channel>
 								</Section>
@@ -9915,6 +9993,31 @@ NW Descriptor: VCOM_Example_CAN_FD.dbc
 											<Elem>1</Elem>
 										</DefaultValue>
 									</Channel>
+									<Channel Name="ACC_NEW_SIGNAL" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="50cb723a-1c3e-4414-9dc4-721c9be5af10" RowDim="1" ColDim="1" Units="" BitFields="3">
+										<Description />
+										<Properties>
+											<Property Name="user.CD.Channel.REString">
+												<String>ESP_Tx.ACC.ACC_ESP_E2E_PR2.ACC_NEW_SIGNAL</String>
+											</Property>
+											<Property Name="user.CD.Max Value">
+												<Double>1000</Double>
+											</Property>
+											<Property Name="user.CD.Min Value">
+												<Double>0</Double>
+											</Property>
+											<Property Name="user.CD.Data Type">
+												<U32>1</U32>
+											</Property>
+										</Properties>
+										<Errors>
+											<Error Key="VCOM_SIGNAL_DEPRECATED" IsError="true" Code="-1234">
+												<Message>VCOM signal deprecated, recommend deleting node: Targets/Controller/Custom Devices/VCOM/ESP_Tx/ACC/ACC_ESP_E2E_PR2/ACC_NEW_SIGNAL</Message>
+											</Error>
+										</Errors>
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
 								</Section>
 								<Section Name="NM_ACC" TypeGUID="3837d955-304b-4051-ba25-d001162bd16e" Identifier="381d5dd9-06a9-46da-b64e-aa8251c64671">
 									<Description />
@@ -9955,9 +10058,6 @@ NW Descriptor: VCOM_Example_CAN_FD.dbc
 											</Property>
 											<Property Name="user.CD.Data Type">
 												<U32>1</U32>
-											</Property>
-											<Property Name="DataSource">
-												<DataSourceNode Channel="Targets/Controller/User Channels/User Channel 1" />
 											</Property>
 										</Properties>
 										<Errors />
