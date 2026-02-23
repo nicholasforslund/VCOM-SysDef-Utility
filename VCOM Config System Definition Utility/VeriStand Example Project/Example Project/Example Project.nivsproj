@@ -246,6 +246,15 @@
 				</Properties>
 				<Errors />
 			</Section>
+			<Section Name="EngineDemo_linux.vsmodel" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="77a2e176-06fb-4858-a31c-ca43b1c01d77">
+				<Description />
+				<Properties>
+					<Property Name="Path">
+						<String>C:\Users\Public\Documents\National Instruments\NI VeriStand 2025\Examples\Stimulus Profile\Engine Demo\Model\EngineDemo_linux.vsmodel</String>
+					</Property>
+				</Properties>
+				<Errors />
+			</Section>
 		</Section>
 	</Root>
 </Document>
