@@ -1,0 +1,254 @@
+VERSION ""
+
+NS_ :
+  NS_DESC_
+  CM_
+  BA_DEF_
+  BA_
+  VAL_
+  CAT_DEF_
+  CAT_
+  FILTER
+  BA_DEF_DEF_
+  EV_DATA_
+  ENVVAR_DATA_
+  SGTYPE_
+  SGTYPE_VAL_
+  BA_DEF_SGTYPE_
+  BA_SGTYPE_
+  SIG_TYPE_REF_
+  VAL_TABLE_
+  SIG_GROUP_
+  SIG_VALTYPE_
+  SIGTYPE_VALTYPE_
+  BO_TX_BU_
+  BA_DEF_REL_
+  BA_REL_
+  BA_DEF_DEF_REL_
+  BU_SG_REL_
+  BU_EV_REL_
+  BU_BO_REL_
+  SG_MUL_VAL_
+
+BS_ :
+
+BU_ : ACC CGW ECM ESP IC RDF SCCM
+
+BO_ 291 ACC_ESP_E2E_PR2: 4 ACC
+  SG_ ACC_ESP_E2E_PR2_CRC : 0|8@1+ (1,0) [0|255] "" ESP
+  SG_ ACC_ESP_E2E_PR2_MC : 8|4@1+ (1,0) [0|15] "" ESP
+  SG_ ACC_NEW_SIGNAL : 12|1@1+ (1,0) [0|1000] "" ESP
+  SG_ ACC_ax_EgoRq : 24|8@1- (1,0) [0|0] "" ESP
+  SG_ ACC_st_ACCSys : 16|8@1+ (1,0) [0|4] "" ESP
+
+BO_ 296 ACC_IC_E2E_PR2: 8 ACC
+  SG_ ACC_IC_E2E_PR2_CRC : 0|8@1+ (1,0) [0|255] "" IC,SCCM
+  SG_ ACC_IC_E2E_PR2_MC : 8|4@1+ (1,0) [0|15] "" IC,SCCM
+  SG_ ACC_dx_ObjMsgDisp : 48|8@1+ (1,0) [0|255] "m" IC,SCCM
+  SG_ ACC_st_DistMsgDisp : 24|8@1+ (1,0) [0|6] "" IC,SCCM
+  SG_ ACC_st_MsgDisp : 16|8@1+ (1,0) [0|4] "" IC,SCCM
+  SG_ ACC_st_WarnMsgDisp : 56|8@1- (1,0) [0|0] "" IC,SCCM
+  SG_ ACC_vx_EgoMsgDisp : 32|16@1- (1,0) [0|0] "" IC,SCCM
+
+BO_ 801 CGW_DIAG_E2E_PR1: 32 CGW
+  SG_ CAN_Frame_01_Signal_A : 16|16@1+ (1,0) [0|65535] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_01_Signal_B : 32|32@1- (0.10000000000000000555,0) [-214748364.80000001192|214748364.69999998808] "V" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_01_Signal_C : 64|32@1- (1,0) [-2147483648|2147483647] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_01_Signal_CRC : 0|8@1+ (1,0) [0|255] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_01_Signal_D : 96|32@1- (1,0) [-2147483648|2147483647] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_01_Signal_E : 128|32@1- (1,0) [-2147483648|2147483647] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_01_Signal_F : 160|32@1- (1,0) [-2147483648|2147483647] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_01_Signal_G : 192|32@1- (1,0) [-2147483648|2147483647] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_01_Signal_MC : 8|4@1+ (1,0) [0|15] "" ACC,ECM,ESP,IC,RDF,SCCM
+
+BO_ 832 CGW_DIAG_RQ_E2E_PR1: 32 CGW
+  SG_ CAN_Frame_02_Signal_A : 12|4@1+ (1,0) [0|15] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_02_Signal_B : 16|32@1- (0.10000000000000000555,0) [-214748364.80000001192|214748364.69999998808] "V" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_02_Signal_C : 48|32@1- (1,0) [-2147483648|2147483647] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_02_Signal_CRC : 0|8@1+ (1,0) [0|255] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_02_Signal_D : 80|32@1- (1,0) [-2147483648|2147483647] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_02_Signal_E : 112|32@1- (1,0) [-2147483648|2147483647] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_02_Signal_F : 144|32@1- (1,0) [-2147483648|2147483647] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_02_Signal_G : 176|32@1- (1,0) [-2147483648|2147483647] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_02_Signal_H : 208|1@1+ (1,0) [0|1] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_02_Signal_I : 209|1@1+ (1,0) [0|1] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ CAN_Frame_02_Signal_MC : 8|4@1+ (1,0) [0|15] "" ACC,ECM,ESP,IC,RDF,SCCM
+
+BO_ 717 ECM_ACC_E2E_PR2: 8 ECM
+  SG_ ECM_ACC_E2E_PR2_CRC : 0|8@1+ (1,0) [0|255] "" ACC,CGW
+  SG_ ECM_ACC_E2E_PR2_MC : 8|4@1+ (1,0) [0|15] "" ACC,CGW
+  SG_ ECM_ACC_Torque : 32|32@1- (1,0) [-2147483648|2147483647] "Nm" ACC,CGW
+  SG_ ECM_CGW_RPM : 24|8@1+ (1,0) [0|10000] "" ACC,CGW
+  SG_ ECM_pc_AccellPdl : 16|8@1- (1,0) [0|0] "" ACC,CGW
+
+BO_ 848 ECM_DIAG_RS_E2E_PR1: 32 ECM
+  SG_ CAN_Frame_03_Signal_A : 12|4@1+ (1,0) [0|15] "" CGW
+  SG_ CAN_Frame_03_Signal_B : 16|32@1- (0.10000000000000000555,0) [-214748364.80000001192|214748364.69999998808] "V" CGW
+  SG_ CAN_Frame_03_Signal_C : 48|32@1- (1,0) [-2147483648|2147483647] "" CGW
+  SG_ CAN_Frame_03_Signal_CRC : 0|8@1+ (1,0) [0|255] "" CGW
+  SG_ CAN_Frame_03_Signal_D : 80|32@1- (1,0) [-2147483648|2147483647] "" CGW
+  SG_ CAN_Frame_03_Signal_E : 112|32@1- (1,0) [-2147483648|2147483647] "" CGW
+  SG_ CAN_Frame_03_Signal_F : 144|32@1- (1,0) [-2147483648|2147483647] "" CGW
+  SG_ CAN_Frame_03_Signal_G : 176|32@1- (1,0) [-2147483648|2147483647] "" CGW
+  SG_ CAN_Frame_03_Signal_H : 208|1@1+ (1,0) [0|1] "" CGW
+  SG_ CAN_Frame_03_Signal_I : 209|1@1+ (1,0) [0|1] "" CGW
+  SG_ CAN_Frame_03_Signal_MC : 8|4@1+ (1,0) [0|15] "" CGW
+
+BO_ 274 ESP_ACC_E2E_PR2: 5 ESP
+  SG_ ESP_ACC_E2E_PR2_CRC : 0|8@1+ (1,0) [0|255] "" ACC
+  SG_ ESP_ACC_E2E_PR2_MC : 8|4@1+ (1,0) [0|15] "" ACC
+  SG_ ESP_st_BrkPdl : 32|8@1- (1,0) [0|0] "" ACC
+  SG_ ESP_vx_Ego_kmh : 16|16@1- (1,0) [0|255] "" ACC
+
+BO_ 1039 NM_ACC: 2 ACC
+  SG_ NM_ACC_ID : 0|8@1+ (1,0) [0|255] "" CGW,ECM,ESP,IC,RDF,SCCM
+  SG_ NM_ACC_State : 8|8@1+ (1,0) [0|32] "" CGW,ECM,ESP,IC,RDF,SCCM
+
+BO_ 1024 NM_CGW: 2 CGW
+  SG_ NM_CGW_ID : 0|8@1+ (1,0) [0|255] "" ACC,ECM,ESP,IC,RDF,SCCM
+  SG_ NM_CGW_State : 8|8@1+ (1,0) [0|32] "" ACC,ECM,ESP,IC,RDF,SCCM
+
+BO_ 1034 NM_ECM: 2 ECM
+  SG_ NM_ECM_ID : 0|8@1+ (1,0) [0|255] "" ACC,CGW,ECM,ESP,IC,RDF,SCCM
+  SG_ NM_ECM_State : 8|8@1+ (1,0) [0|32] "" ACC,CGW,ECM,ESP,IC,RDF,SCCM
+
+BO_ 1029 NM_ESP: 2 ESP
+  SG_ NM_ESP_ID : 0|8@1+ (1,0) [0|255] "" ACC,CGW,ECM,IC,RDF,SCCM
+  SG_ NM_ESP_State : 8|8@1+ (1,0) [0|32] "" ACC,CGW,ECM,IC,RDF,SCCM
+
+BO_ 1044 NM_IC: 2 IC
+  SG_ NM_IC_ID : 0|8@1+ (1,0) [0|255] "" ACC,CGW,ECM,ESP,RDF,SCCM
+  SG_ NM_IC_State : 8|8@1+ (1,0) [0|32] "" ACC,CGW,ECM,ESP,RDF,SCCM
+
+BO_ 1045 NM_RDF: 2 RDF
+  SG_ NM_RDF_ID : 0|8@1+ (1,0) [0|255] "" ACC,CGW,ECM,ESP,IC,RDF,SCCM
+  SG_ NM_RDF_State : 8|8@1+ (1,0) [0|32] "" ACC,CGW,ECM,ESP,IC,RDF,SCCM
+
+BO_ 1046 NM_SCCM: 2 SCCM
+  SG_ NM_SCCM_ID : 0|8@1- (1,0) [0|0] "" ACC,CGW,ECM,ESP,IC,RDF
+  SG_ NM_SCCM_State : 8|8@1+ (1,0) [0|32] "" ACC,CGW,ECM,ESP,IC,RDF
+
+BO_ 325 RDF_ACC_E2E_PR2: 5 RDF
+  SG_ RDF_ACC_E2E_PR2_CRC : 0|8@1+ (1,0) [0|255] "" ACC
+  SG_ RDF_ACC_E2E_PR2_MC : 8|4@1+ (1,0) [0|15] "" ACC
+  SG_ RDF_dx_Obj : 32|8@1+ (1,0) [0|255] "m" ACC
+  SG_ RDF_vx_Obj_kmh : 16|16@1+ (1,0) [0|255] "km/h" ACC
+
+BO_ 315 SCCM_ACC_E2E_PR2: 12 SCCM
+  SG_ SCCM_ACC_E2E_PR2_CRC : 0|8@1+ (1,0) [0|255] "" ACC
+  SG_ SCCM_ACC_E2E_PR2_MC : 8|4@1+ (1,0) [0|15] "" ACC
+  SG_ SCCM_st_ACCDistDnRq : 32|8@1- (1,0) [0|0] "" ACC
+  SG_ SCCM_st_ACCDistUpRq : 40|8@1+ (1,0) [0|0] "" ACC
+  SG_ SCCM_st_ACCOn : 16|8@1+ (1,0) [0|3] "" ACC
+  SG_ SCCM_st_ACCResume : 24|8@1+ (1,0) [0|3] "" ACC
+  SG_ SCCM_st_ACCSpdDn1 : 48|8@1- (1,0) [0|0] "" ACC
+  SG_ SCCM_st_ACCSpdDn10 : 56|8@1- (1,0) [0|0] "" ACC
+  SG_ SCCM_st_ACCSpdUp1 : 64|8@1+ (1,0) [0|0] "" ACC
+  SG_ SCCM_st_ACCSpdUp10 : 72|8@1- (1,0) [0|0] "" ACC
+
+CM_ "This example is generated by AKKA Gmbh& Co. KGaA for PROVEtech:RBS";
+CM_ SG_ 801 CAN_Frame_01_Signal_CRC "CRC-Checksum according SAE J1850";
+CM_ SG_ 801 CAN_Frame_01_Signal_MC "Messagecounter";
+CM_ SG_ 832 CAN_Frame_02_Signal_CRC "CRC-Checksum according SAE J1850";
+CM_ SG_ 832 CAN_Frame_02_Signal_MC "Messagecounter";
+CM_ SG_ 848 CAN_Frame_03_Signal_CRC "CRC-Checksum according SAE J1850";
+CM_ SG_ 848 CAN_Frame_03_Signal_MC "Messagecounter";
+BA_DEF_ "DBName" STRING;
+BA_DEF_ "BusType" STRING;
+BA_DEF_ BO_ "CANFD_BRS" ENUM "0","1";
+BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_ "GenMsgSendType" ENUM "Cyclic","Event","CyclicIfActive","SpontanWithDelay","CyclicAndSpontan","CyclicAndSpontanWithDelay";
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_ "GenMsgDelayTime" INT 0 0;
+BA_DEF_ SG_ "GenSigStartValue" FLOAT 0 0;
+BA_DEF_DEF_ "DBName" "Cluster";
+BA_DEF_DEF_ "BusType" "CAN FD";
+BA_DEF_DEF_ "CANFD_BRS" "1";
+BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_ "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "GenMsgDelayTime" 0;
+BA_DEF_DEF_ "GenSigStartValue" 0;
+BA_ "VFrameFormat" BO_ 291 14;
+BA_ "GenMsgSendType" BO_ 291 0;
+BA_ "GenMsgCycleTime" BO_ 291 1000;
+BA_ "VFrameFormat" BO_ 296 14;
+BA_ "GenMsgSendType" BO_ 296 4;
+BA_ "GenMsgCycleTime" BO_ 296 100;
+BA_ "VFrameFormat" BO_ 801 14;
+BA_ "GenMsgSendType" BO_ 801 4;
+BA_ "GenMsgCycleTime" BO_ 801 100;
+BA_ "VFrameFormat" BO_ 832 14;
+BA_ "GenMsgSendType" BO_ 832 4;
+BA_ "GenMsgCycleTime" BO_ 832 1000;
+BA_ "VFrameFormat" BO_ 717 14;
+BA_ "GenMsgSendType" BO_ 717 4;
+BA_ "GenMsgCycleTime" BO_ 717 50;
+BA_ "VFrameFormat" BO_ 848 14;
+BA_ "GenMsgSendType" BO_ 848 4;
+BA_ "GenMsgCycleTime" BO_ 848 500;
+BA_ "VFrameFormat" BO_ 274 14;
+BA_ "GenMsgSendType" BO_ 274 4;
+BA_ "GenMsgCycleTime" BO_ 274 20;
+BA_ "VFrameFormat" BO_ 1039 14;
+BA_ "GenMsgSendType" BO_ 1039 1;
+BA_ "VFrameFormat" BO_ 1024 14;
+BA_ "GenMsgSendType" BO_ 1024 1;
+BA_ "VFrameFormat" BO_ 1034 14;
+BA_ "GenMsgSendType" BO_ 1034 1;
+BA_ "VFrameFormat" BO_ 1029 14;
+BA_ "GenMsgSendType" BO_ 1029 1;
+BA_ "VFrameFormat" BO_ 1044 14;
+BA_ "GenMsgSendType" BO_ 1044 1;
+BA_ "VFrameFormat" BO_ 1045 14;
+BA_ "GenMsgSendType" BO_ 1045 1;
+BA_ "VFrameFormat" BO_ 1046 14;
+BA_ "GenMsgSendType" BO_ 1046 1;
+BA_ "VFrameFormat" BO_ 325 14;
+BA_ "GenMsgSendType" BO_ 325 0;
+BA_ "GenMsgCycleTime" BO_ 325 10;
+BA_ "VFrameFormat" BO_ 315 14;
+BA_ "GenMsgSendType" BO_ 315 4;
+BA_ "GenMsgCycleTime" BO_ 315 20;
+BA_ "GenSigStartValue" SG_ 291 ACC_st_ACCSys 3;
+BA_ "GenSigStartValue" SG_ 296 ACC_st_DistMsgDisp 6;
+BA_ "GenSigStartValue" SG_ 296 ACC_st_MsgDisp 3;
+BA_ "GenSigStartValue" SG_ 296 ACC_st_WarnMsgDisp 2;
+BA_ "GenSigStartValue" SG_ 801 CAN_Frame_01_Signal_A 15;
+BA_ "GenSigStartValue" SG_ 801 CAN_Frame_01_Signal_B 255;
+BA_ "GenSigStartValue" SG_ 801 CAN_Frame_01_Signal_C 255;
+BA_ "GenSigStartValue" SG_ 801 CAN_Frame_01_Signal_CRC 255;
+BA_ "GenSigStartValue" SG_ 801 CAN_Frame_01_Signal_D 255;
+BA_ "GenSigStartValue" SG_ 801 CAN_Frame_01_Signal_E 255;
+BA_ "GenSigStartValue" SG_ 801 CAN_Frame_01_Signal_F 255;
+BA_ "GenSigStartValue" SG_ 801 CAN_Frame_01_Signal_G 255;
+BA_ "GenSigStartValue" SG_ 832 CAN_Frame_02_Signal_A 15;
+BA_ "GenSigStartValue" SG_ 832 CAN_Frame_02_Signal_B 255;
+BA_ "GenSigStartValue" SG_ 832 CAN_Frame_02_Signal_C 255;
+BA_ "GenSigStartValue" SG_ 832 CAN_Frame_02_Signal_CRC 255;
+BA_ "GenSigStartValue" SG_ 832 CAN_Frame_02_Signal_D 255;
+BA_ "GenSigStartValue" SG_ 832 CAN_Frame_02_Signal_E 255;
+BA_ "GenSigStartValue" SG_ 832 CAN_Frame_02_Signal_F 255;
+BA_ "GenSigStartValue" SG_ 832 CAN_Frame_02_Signal_G 63;
+BA_ "GenSigStartValue" SG_ 832 CAN_Frame_02_Signal_H 1;
+BA_ "GenSigStartValue" SG_ 832 CAN_Frame_02_Signal_I 1;
+BA_ "GenSigStartValue" SG_ 848 CAN_Frame_03_Signal_A 15;
+BA_ "GenSigStartValue" SG_ 848 CAN_Frame_03_Signal_B 255;
+BA_ "GenSigStartValue" SG_ 848 CAN_Frame_03_Signal_C 255;
+BA_ "GenSigStartValue" SG_ 848 CAN_Frame_03_Signal_CRC 255;
+BA_ "GenSigStartValue" SG_ 848 CAN_Frame_03_Signal_D 255;
+BA_ "GenSigStartValue" SG_ 848 CAN_Frame_03_Signal_E 255;
+BA_ "GenSigStartValue" SG_ 848 CAN_Frame_03_Signal_F 255;
+BA_ "GenSigStartValue" SG_ 848 CAN_Frame_03_Signal_G 63;
+BA_ "GenSigStartValue" SG_ 848 CAN_Frame_03_Signal_H 1;
+BA_ "GenSigStartValue" SG_ 848 CAN_Frame_03_Signal_I 1;
+BA_ "GenSigStartValue" SG_ 274 ESP_st_BrkPdl 3;
+BA_ "GenSigStartValue" SG_ 325 RDF_dx_Obj 255;
+BA_ "GenSigStartValue" SG_ 315 SCCM_st_ACCDistDnRq 3;
+BA_ "GenSigStartValue" SG_ 315 SCCM_st_ACCDistUpRq 3;
+BA_ "GenSigStartValue" SG_ 315 SCCM_st_ACCOn 3;
+BA_ "GenSigStartValue" SG_ 315 SCCM_st_ACCResume 3;
+BA_ "GenSigStartValue" SG_ 315 SCCM_st_ACCSpdDn1 3;
+BA_ "GenSigStartValue" SG_ 315 SCCM_st_ACCSpdDn10 3;
+BA_ "GenSigStartValue" SG_ 315 SCCM_st_ACCSpdUp1 3;
+BA_ "GenSigStartValue" SG_ 315 SCCM_st_ACCSpdUp10 3;

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RCConfiguration>
+    <DebugLevel>0</DebugLevel>
+
+    <EventSource>
+		<Name>SysClock</Name>
+		<Class>RC_CSysClock</Class>
+		<Config>
+			<Attribute>
+				<TimerPeriod_us>10000</TimerPeriod_us>
+			</Attribute>
+			<TimerOverrunCounter>false</TimerOverrunCounter>
+			<ProcessTime>false</ProcessTime>
+		</Config>
+	</EventSource>
+    <Device>
+        <Name>NIXNetCAN</Name>
+        <Class>RC_CNIXnetDevice</Class>
+        <Config>
+            <clock_src>SysClock</clock_src>
+            <Port>
+                <Name>CAN_Sender</Name>
+                <Class>RC_CCANPort</Class>
+                <Config>
+                    <HWPort>CAN1</HWPort>
+                    <BitRate>500000</BitRate>
+                    <DataBitRate>2000000</DataBitRate>
+                    <AckBit>true</AckBit>
+                    <NWDescriptor>VCOM_Example_CAN_FD.dbc</NWDescriptor>
+                    <RBSDescriptor>VCOM_Example_CAN_FD.xml</RBSDescriptor>
+                    <EcuUnderTest>ESP</EcuUnderTest>
+                    <EnableBusTermination>true</EnableBusTermination>
+                    <Triggering>None</Triggering>
+                    <ConfigureNM>false</ConfigureNM>
+                </Config>
+            </Port>
+            <Port>
+                <Name>ESP</Name>
+                <Class>RC_CCANPort</Class>
+                <Config>
+                    <HWPort>CAN2</HWPort>
+                    <BitRate>500000</BitRate>
+                    <DataBitRate>2000000</DataBitRate>
+                    <AckBit>true</AckBit>
+                    <NWDescriptor>VCOM_Example_CAN_FD.dbc</NWDescriptor>
+                    <RBSDescriptor>VCOM_Example_CAN_FD.xml</RBSDescriptor>
+                    <EnableBusTermination>true</EnableBusTermination>
+                    <Triggering>None</Triggering>
+                    <ConfigureNM>false</ConfigureNM>
+                </Config>
+            </Port>
+        </Config>
+    </Device>
+
+    <Peer>
+        <Name>CAN_Sender_Tx</Name>
+        <Class>RC_CRBS</Class>
+        <Config>
+            <Port>CAN_Sender</Port>
+            <clock_src>SysClock</clock_src>
+            <AutoSignalToggleBitKey>_Tgl_</AutoSignalToggleBitKey>
+            <AutoSignalParityBitKey>_Parity_</AutoSignalParityBitKey>
+        </Config>
+    </Peer>
+
+    <Peer>
+        <Name>CAN_Sender_Rx</Name>
+        <Class>RC_CDisassembler</Class>
+        <Config>
+            <Port>CAN_Sender</Port>
+            <clock_src>SysClock</clock_src>
+            <EnableBusLoad>true</EnableBusLoad>
+            <AutoSignalToggleBitKey>_Tgl_</AutoSignalToggleBitKey>
+            <AutoSignalParityBitKey>_Parity_</AutoSignalParityBitKey>
+        </Config>
+    </Peer>
+
+    <Peer>
+        <Name>ESP_Tx</Name>
+        <Class>RC_CRBS</Class>
+        <Config>
+            <Port>ESP</Port>
+            <clock_src>SysClock</clock_src>
+            <AutoSignalToggleBitKey>_Tgl_</AutoSignalToggleBitKey>
+            <AutoSignalParityBitKey>_Parity_</AutoSignalParityBitKey>
+        </Config>
+    </Peer>
+
+    <Peer>
+        <Name>ESP_Rx</Name>
+        <Class>RC_CDisassembler</Class>
+        <Config>
+            <Port>ESP</Port>
+            <clock_src>SysClock</clock_src>
+            <AutoSignalToggleBitKey>_Tgl_</AutoSignalToggleBitKey>
+            <AutoSignalParityBitKey>_Parity_</AutoSignalParityBitKey>
+        </Config>
+    </Peer>
+</RCConfiguration>

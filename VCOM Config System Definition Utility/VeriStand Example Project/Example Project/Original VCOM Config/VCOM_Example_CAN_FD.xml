@@ -1,0 +1,2409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanNetworkConfig>
+    <!--Boolean-->
+    <IsNmEnable>True</IsNmEnable>
+    <!--Boolean-->
+    <IsRbsEnable>False</IsRbsEnable>
+    <!--String-->
+    <Name>VCOM_Example_CAN_FD.dbc</Name>
+    <!--String-->
+    <Comment />
+    <!--String-->
+    <Port />
+    <!--String-->
+    <Version />
+    <!--NMType-->
+    <Type>AUTOSAR</Type>
+    <!--UInt32-->
+    <IdBase>1024</IdBase>
+    <!--[ms]UInt16-->
+    <TimeWaitBusSleep>1500</TimeWaitBusSleep>
+    <!--[ms]UInt16-->
+    <NmTimeout>260</NmTimeout>
+    <!--[ms]UInt16-->
+    <RepeatMsg>1000</RepeatMsg>
+    <!--[ms]UInt16-->
+    <MsgCycle>2000</MsgCycle>
+    <!--[ms]UInt16-->
+    <NumberOfNodes>256</NumberOfNodes>
+    <NodeDict>
+        <CanNodeConfig>
+            <!--Boolean-->
+            <IsRbsEnable>False</IsRbsEnable>
+            <!--Boolean-->
+            <IsNmEnable>True</IsNmEnable>
+            <!--String-->
+            <Name>CGW</Name>
+            <!--String-->
+            <Comment />
+            <!--Boolean-->
+            <IsNmNode>True</IsNmNode>
+            <!--UInt32-->
+            <NmStationAddress>0</NmStationAddress>
+            <MessageDictTx>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>True</IsRbsEnable>
+                    <!--String-->
+                    <Name>CGW_DIAG_E2E_PR1</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>100</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>50</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>5</DelayTime>
+                    <!--UInt32-->
+                    <ID>801</ID>
+                    <!--UInt32-->
+                    <Length>32</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>CyclicAndSpontaneousWD</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_01_Signal_A</Name>
+                            <!--UInt32-->
+                            <BitWidth>16</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>15</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>65535</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>16</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_01_Signal_B</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>214748364.7</Max>
+                            <!--Double-->
+                            <Min>-214748364.8</Min>
+                            <!--UInt32-->
+                            <StartBit>32</StartBit>
+                            <!--String-->
+                            <Unit>V</Unit>
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_01_Signal_C</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>64</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalChecksum>
+                            <!--Possible Values: ADD_AND_COMPLEMENT_TO_ONE, ADD_WITH_CARRY, J1850, J1850_USER, XOR, XOR_4BIT, HONDA_CRC_METHOD, CUSTOM_CHECKSUM, MAZDA_CHECKSUM, GAC_CHECKSUM, -->
+                            <ChecksumType>J1850</ChecksumType>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--String-->
+                            <Name>CAN_Frame_01_Signal_CRC</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment>CRC-Checksum according SAE J1850</Comment>
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalChecksum>
+                        <CanSignalRamp>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--Possible Values: Up, Down, -->
+                            <Direction>Up</Direction>
+                            <!--Possible Values: SawtoothRamp, SawtoothRampWithOverflowBit, TriangleRamp, -->
+                            <Mode>SawtoothRamp</Mode>
+                            <!--Int32-->
+                            <NumberOfFlanks>0</NumberOfFlanks>
+                            <!--Int32-->
+                            <RampSum>0</RampSum>
+                            <!--Int32-->
+                            <UpdateRate>1</UpdateRate>
+                            <!--String-->
+                            <Name>CAN_Frame_01_Signal_MC</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment>Messagecounter</Comment>
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalRamp>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_01_Signal_D</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>96</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_01_Signal_E</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>128</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_01_Signal_F</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>160</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_01_Signal_G</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>192</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                    </SignalDict>
+                </CanMessageConfig>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>False</IsRbsEnable>
+                    <!--String-->
+                    <Name>NM_CGW</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>1000</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>0</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>0</DelayTime>
+                    <!--UInt32-->
+                    <ID>1024</ID>
+                    <!--UInt32-->
+                    <Length>2</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>Cyclic</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_CGW_ID</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_CGW_State</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>32</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                    </SignalDict>
+                </CanMessageConfig>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>True</IsRbsEnable>
+                    <!--String-->
+                    <Name>CGW_DIAG_RQ_E2E_PR1</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>1000</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>100</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>20</DelayTime>
+                    <!--UInt32-->
+                    <ID>832</ID>
+                    <!--UInt32-->
+                    <Length>32</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>CyclicAndSpontaneous</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_A</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>15</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>12</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_B</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>214748364.7</Max>
+                            <!--Double-->
+                            <Min>-214748364.8</Min>
+                            <!--UInt32-->
+                            <StartBit>16</StartBit>
+                            <!--String-->
+                            <Unit>V</Unit>
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_C</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>48</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_D</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>80</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_E</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>112</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_F</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>144</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_G</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>63</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>176</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_H</Name>
+                            <!--UInt32-->
+                            <BitWidth>1</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>1</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>1</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>208</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_I</Name>
+                            <!--UInt32-->
+                            <BitWidth>1</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>1</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>1</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>209</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalChecksum>
+                            <!--Possible Values: ADD_AND_COMPLEMENT_TO_ONE, ADD_WITH_CARRY, J1850, J1850_USER, XOR, XOR_4BIT, HONDA_CRC_METHOD, CUSTOM_CHECKSUM, MAZDA_CHECKSUM, GAC_CHECKSUM, -->
+                            <ChecksumType>J1850</ChecksumType>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_CRC</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment>CRC-Checksum according SAE J1850</Comment>
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalChecksum>
+                        <CanSignalRamp>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--Possible Values: Up, Down, -->
+                            <Direction>Up</Direction>
+                            <!--Possible Values: SawtoothRamp, SawtoothRampWithOverflowBit, TriangleRamp, -->
+                            <Mode>SawtoothRamp</Mode>
+                            <!--Int32-->
+                            <NumberOfFlanks>0</NumberOfFlanks>
+                            <!--Int32-->
+                            <RampSum>0</RampSum>
+                            <!--Int32-->
+                            <UpdateRate>1</UpdateRate>
+                            <!--String-->
+                            <Name>CAN_Frame_02_Signal_MC</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment>Messagecounter</Comment>
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalRamp>
+                    </SignalDict>
+                </CanMessageConfig>
+            </MessageDictTx>
+        </CanNodeConfig>
+        <CanNodeConfig>
+            <!--Boolean-->
+            <IsRbsEnable>False</IsRbsEnable>
+            <!--Boolean-->
+            <IsNmEnable>True</IsNmEnable>
+            <!--String-->
+            <Name>ESP</Name>
+            <!--String-->
+            <Comment />
+            <!--Boolean-->
+            <IsNmNode>True</IsNmNode>
+            <!--UInt32-->
+            <NmStationAddress>5</NmStationAddress>
+            <MessageDictTx>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>False</IsRbsEnable>
+                    <!--String-->
+                    <Name>NM_ESP</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>1000</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>0</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>0</DelayTime>
+                    <!--UInt32-->
+                    <ID>1029</ID>
+                    <!--UInt32-->
+                    <Length>2</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>Cyclic</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_ESP_ID</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_ESP_State</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>32</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                    </SignalDict>
+                </CanMessageConfig>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>True</IsRbsEnable>
+                    <!--String-->
+                    <Name>ESP_ACC_E2E_PR2</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>20</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>10</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>5</DelayTime>
+                    <!--UInt32-->
+                    <ID>274</ID>
+                    <!--UInt32-->
+                    <Length>5</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>CyclicAndSpontaneousWD</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ESP_vx_Ego_kmh</Name>
+                            <!--UInt32-->
+                            <BitWidth>16</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>16</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ESP_st_BrkPdl</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>32</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalChecksum>
+                            <!--Possible Values: ADD_AND_COMPLEMENT_TO_ONE, ADD_WITH_CARRY, J1850, J1850_USER, XOR, XOR_4BIT, HONDA_CRC_METHOD, CUSTOM_CHECKSUM, MAZDA_CHECKSUM, GAC_CHECKSUM, -->
+                            <ChecksumType>J1850</ChecksumType>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--String-->
+                            <Name>ESP_ACC_E2E_PR2_CRC</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalChecksum>
+                        <CanSignalRamp>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--Possible Values: Up, Down, -->
+                            <Direction>Up</Direction>
+                            <!--Possible Values: SawtoothRamp, SawtoothRampWithOverflowBit, TriangleRamp, -->
+                            <Mode>SawtoothRamp</Mode>
+                            <!--Int32-->
+                            <NumberOfFlanks>0</NumberOfFlanks>
+                            <!--Int32-->
+                            <RampSum>0</RampSum>
+                            <!--Int32-->
+                            <UpdateRate>1</UpdateRate>
+                            <!--String-->
+                            <Name>ESP_ACC_E2E_PR2_MC</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalRamp>
+                    </SignalDict>
+                </CanMessageConfig>
+            </MessageDictTx>
+        </CanNodeConfig>
+        <CanNodeConfig>
+            <!--Boolean-->
+            <IsRbsEnable>False</IsRbsEnable>
+            <!--Boolean-->
+            <IsNmEnable>True</IsNmEnable>
+            <!--String-->
+            <Name>ECM</Name>
+            <!--String-->
+            <Comment />
+            <!--Boolean-->
+            <IsNmNode>True</IsNmNode>
+            <!--UInt32-->
+            <NmStationAddress>10</NmStationAddress>
+            <MessageDictTx>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>False</IsRbsEnable>
+                    <!--String-->
+                    <Name>NM_ECM</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>1000</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>0</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>0</DelayTime>
+                    <!--UInt32-->
+                    <ID>1034</ID>
+                    <!--UInt32-->
+                    <Length>2</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>Cyclic</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_ECM_ID</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_ECM_State</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>32</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                    </SignalDict>
+                </CanMessageConfig>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>True</IsRbsEnable>
+                    <!--String-->
+                    <Name>ECM_DIAG_RS_E2E_PR1</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>500</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>0</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>20</DelayTime>
+                    <!--UInt32-->
+                    <ID>848</ID>
+                    <!--UInt32-->
+                    <Length>32</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>CyclicAndSpontaneousWD</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_A</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>15</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>12</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_B</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>214748364.7</Max>
+                            <!--Double-->
+                            <Min>-214748364.8</Min>
+                            <!--UInt32-->
+                            <StartBit>16</StartBit>
+                            <!--String-->
+                            <Unit>V</Unit>
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_C</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>48</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_D</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>80</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_E</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>112</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_F</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>144</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_G</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>63</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>176</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_H</Name>
+                            <!--UInt32-->
+                            <BitWidth>1</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>1</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>1</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>208</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_I</Name>
+                            <!--UInt32-->
+                            <BitWidth>1</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>1</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>1</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>209</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalRamp>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--Possible Values: Up, Down, -->
+                            <Direction>Up</Direction>
+                            <!--Possible Values: SawtoothRamp, SawtoothRampWithOverflowBit, TriangleRamp, -->
+                            <Mode>SawtoothRamp</Mode>
+                            <!--Int32-->
+                            <NumberOfFlanks>0</NumberOfFlanks>
+                            <!--Int32-->
+                            <RampSum>0</RampSum>
+                            <!--Int32-->
+                            <UpdateRate>1</UpdateRate>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_MC</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment>Messagecounter</Comment>
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalRamp>
+                        <CanSignalChecksum>
+                            <!--Possible Values: ADD_AND_COMPLEMENT_TO_ONE, ADD_WITH_CARRY, J1850, J1850_USER, XOR, XOR_4BIT, HONDA_CRC_METHOD, CUSTOM_CHECKSUM, MAZDA_CHECKSUM, GAC_CHECKSUM, -->
+                            <ChecksumType>J1850</ChecksumType>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--String-->
+                            <Name>CAN_Frame_03_Signal_CRC</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment>CRC-Checksum according SAE J1850</Comment>
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalChecksum>
+                    </SignalDict>
+                </CanMessageConfig>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>True</IsRbsEnable>
+                    <!--String-->
+                    <Name>ECM_ACC_E2E_PR2</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>50</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>20</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>10</DelayTime>
+                    <!--UInt32-->
+                    <ID>717</ID>
+                    <!--UInt32-->
+                    <Length>8</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>CyclicAndSpontaneousWD</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ECM_pc_AccellPdl</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>16</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ECM_ACC_Torque</Name>
+                            <!--UInt32-->
+                            <BitWidth>32</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>2147483647</Max>
+                            <!--Double-->
+                            <Min>-2147483648</Min>
+                            <!--UInt32-->
+                            <StartBit>32</StartBit>
+                            <!--String-->
+                            <Unit>Nm</Unit>
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ECM_CGW_RPM</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>10000</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>24</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalChecksum>
+                            <!--Possible Values: ADD_AND_COMPLEMENT_TO_ONE, ADD_WITH_CARRY, J1850, J1850_USER, XOR, XOR_4BIT, HONDA_CRC_METHOD, CUSTOM_CHECKSUM, MAZDA_CHECKSUM, GAC_CHECKSUM, -->
+                            <ChecksumType>J1850</ChecksumType>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--String-->
+                            <Name>ECM_ACC_E2E_PR2_CRC</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalChecksum>
+                        <CanSignalRamp>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--Possible Values: Up, Down, -->
+                            <Direction>Up</Direction>
+                            <!--Possible Values: SawtoothRamp, SawtoothRampWithOverflowBit, TriangleRamp, -->
+                            <Mode>SawtoothRamp</Mode>
+                            <!--Int32-->
+                            <NumberOfFlanks>0</NumberOfFlanks>
+                            <!--Int32-->
+                            <RampSum>0</RampSum>
+                            <!--Int32-->
+                            <UpdateRate>1</UpdateRate>
+                            <!--String-->
+                            <Name>ECM_ACC_E2E_PR2_MC</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalRamp>
+                    </SignalDict>
+                </CanMessageConfig>
+            </MessageDictTx>
+        </CanNodeConfig>
+        <CanNodeConfig>
+            <!--Boolean-->
+            <IsRbsEnable>False</IsRbsEnable>
+            <!--Boolean-->
+            <IsNmEnable>True</IsNmEnable>
+            <!--String-->
+            <Name>ACC</Name>
+            <!--String-->
+            <Comment />
+            <!--Boolean-->
+            <IsNmNode>True</IsNmNode>
+            <!--UInt32-->
+            <NmStationAddress>15</NmStationAddress>
+            <MessageDictTx>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>False</IsRbsEnable>
+                    <!--String-->
+                    <Name>NM_ACC</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>1000</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>0</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>0</DelayTime>
+                    <!--UInt32-->
+                    <ID>1039</ID>
+                    <!--UInt32-->
+                    <Length>2</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>Cyclic</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_ACC_ID</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_ACC_State</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>32</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                    </SignalDict>
+                </CanMessageConfig>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>True</IsRbsEnable>
+                    <!--String-->
+                    <Name>ACC_ESP_E2E_PR2</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>1000</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>100</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>0</DelayTime>
+                    <!--UInt32-->
+                    <ID>291</ID>
+                    <!--UInt32-->
+                    <Length>4</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>CyclicIfActiveFast</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ACC_st_ACCSys</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>4</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>16</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ACC_ax_EgoRq</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>24</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalChecksum>
+                            <!--Possible Values: ADD_AND_COMPLEMENT_TO_ONE, ADD_WITH_CARRY, J1850, J1850_USER, XOR, XOR_4BIT, HONDA_CRC_METHOD, CUSTOM_CHECKSUM, MAZDA_CHECKSUM, GAC_CHECKSUM, -->
+                            <ChecksumType>J1850</ChecksumType>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--String-->
+                            <Name>ACC_ESP_E2E_PR2_CRC</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalChecksum>
+                        <CanSignalRamp>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--Possible Values: Up, Down, -->
+                            <Direction>Up</Direction>
+                            <!--Possible Values: SawtoothRamp, SawtoothRampWithOverflowBit, TriangleRamp, -->
+                            <Mode>SawtoothRamp</Mode>
+                            <!--Int32-->
+                            <NumberOfFlanks>0</NumberOfFlanks>
+                            <!--Int32-->
+                            <RampSum>0</RampSum>
+                            <!--Int32-->
+                            <UpdateRate>1</UpdateRate>
+                            <!--String-->
+                            <Name>ACC_ESP_E2E_PR2_MC</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalRamp>
+                    </SignalDict>
+                </CanMessageConfig>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>True</IsRbsEnable>
+                    <!--String-->
+                    <Name>ACC_IC_E2E_PR2</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>100</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>50</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>10</DelayTime>
+                    <!--UInt32-->
+                    <ID>296</ID>
+                    <!--UInt32-->
+                    <Length>8</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>CyclicAndSpontaneousWD</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ACC_st_MsgDisp</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>4</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>16</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ACC_vx_EgoMsgDisp</Name>
+                            <!--UInt32-->
+                            <BitWidth>16</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>32</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ACC_st_DistMsgDisp</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>6</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>6</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>24</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ACC_dx_ObjMsgDisp</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>48</StartBit>
+                            <!--String-->
+                            <Unit>m</Unit>
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>ACC_st_WarnMsgDisp</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>2</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>56</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalChecksum>
+                            <!--Possible Values: ADD_AND_COMPLEMENT_TO_ONE, ADD_WITH_CARRY, J1850, J1850_USER, XOR, XOR_4BIT, HONDA_CRC_METHOD, CUSTOM_CHECKSUM, MAZDA_CHECKSUM, GAC_CHECKSUM, -->
+                            <ChecksumType>J1850</ChecksumType>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--String-->
+                            <Name>ACC_IC_E2E_PR2_CRC</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalChecksum>
+                        <CanSignalRamp>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--Possible Values: Up, Down, -->
+                            <Direction>Up</Direction>
+                            <!--Possible Values: SawtoothRamp, SawtoothRampWithOverflowBit, TriangleRamp, -->
+                            <Mode>SawtoothRamp</Mode>
+                            <!--Int32-->
+                            <NumberOfFlanks>0</NumberOfFlanks>
+                            <!--Int32-->
+                            <RampSum>0</RampSum>
+                            <!--Int32-->
+                            <UpdateRate>1</UpdateRate>
+                            <!--String-->
+                            <Name>ACC_IC_E2E_PR2_MC</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalRamp>
+                    </SignalDict>
+                </CanMessageConfig>
+            </MessageDictTx>
+        </CanNodeConfig>
+        <CanNodeConfig>
+            <!--Boolean-->
+            <IsRbsEnable>False</IsRbsEnable>
+            <!--Boolean-->
+            <IsNmEnable>True</IsNmEnable>
+            <!--String-->
+            <Name>IC</Name>
+            <!--String-->
+            <Comment />
+            <!--Boolean-->
+            <IsNmNode>True</IsNmNode>
+            <!--UInt32-->
+            <NmStationAddress>20</NmStationAddress>
+            <MessageDictTx>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>False</IsRbsEnable>
+                    <!--String-->
+                    <Name>NM_IC</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>1000</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>0</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>0</DelayTime>
+                    <!--UInt32-->
+                    <ID>1044</ID>
+                    <!--UInt32-->
+                    <Length>2</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>Cyclic</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_IC_ID</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_IC_State</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>32</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                    </SignalDict>
+                </CanMessageConfig>
+            </MessageDictTx>
+        </CanNodeConfig>
+        <CanNodeConfig>
+            <!--Boolean-->
+            <IsRbsEnable>False</IsRbsEnable>
+            <!--Boolean-->
+            <IsNmEnable>True</IsNmEnable>
+            <!--String-->
+            <Name>RDF</Name>
+            <!--String-->
+            <Comment />
+            <!--Boolean-->
+            <IsNmNode>True</IsNmNode>
+            <!--UInt32-->
+            <NmStationAddress>21</NmStationAddress>
+            <MessageDictTx>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>False</IsRbsEnable>
+                    <!--String-->
+                    <Name>NM_RDF</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>1000</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>0</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>0</DelayTime>
+                    <!--UInt32-->
+                    <ID>1045</ID>
+                    <!--UInt32-->
+                    <Length>2</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>Cyclic</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_RDF_ID</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_RDF_State</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>32</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                    </SignalDict>
+                </CanMessageConfig>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>True</IsRbsEnable>
+                    <!--String-->
+                    <Name>RDF_ACC_E2E_PR2</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>10</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>0</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>5</DelayTime>
+                    <!--UInt32-->
+                    <ID>325</ID>
+                    <!--UInt32-->
+                    <Length>5</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>Cyclic</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>RDF_vx_Obj_kmh</Name>
+                            <!--UInt32-->
+                            <BitWidth>16</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>16</StartBit>
+                            <!--String-->
+                            <Unit>km/h</Unit>
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>RDF_dx_Obj</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>255</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>32</StartBit>
+                            <!--String-->
+                            <Unit>m</Unit>
+                        </CanSignalConfig>
+                        <CanSignalChecksum>
+                            <!--Possible Values: ADD_AND_COMPLEMENT_TO_ONE, ADD_WITH_CARRY, J1850, J1850_USER, XOR, XOR_4BIT, HONDA_CRC_METHOD, CUSTOM_CHECKSUM, MAZDA_CHECKSUM, GAC_CHECKSUM, -->
+                            <ChecksumType>J1850</ChecksumType>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--String-->
+                            <Name>RDF_ACC_E2E_PR2_CRC</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalChecksum>
+                        <CanSignalRamp>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--Possible Values: Up, Down, -->
+                            <Direction>Up</Direction>
+                            <!--Possible Values: SawtoothRamp, SawtoothRampWithOverflowBit, TriangleRamp, -->
+                            <Mode>SawtoothRamp</Mode>
+                            <!--Int32-->
+                            <NumberOfFlanks>0</NumberOfFlanks>
+                            <!--Int32-->
+                            <RampSum>0</RampSum>
+                            <!--Int32-->
+                            <UpdateRate>1</UpdateRate>
+                            <!--String-->
+                            <Name>RDF_ACC_E2E_PR2_MC</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalRamp>
+                    </SignalDict>
+                </CanMessageConfig>
+            </MessageDictTx>
+        </CanNodeConfig>
+        <CanNodeConfig>
+            <!--Boolean-->
+            <IsRbsEnable>False</IsRbsEnable>
+            <!--Boolean-->
+            <IsNmEnable>True</IsNmEnable>
+            <!--String-->
+            <Name>SCCM</Name>
+            <!--String-->
+            <Comment />
+            <!--Boolean-->
+            <IsNmNode>True</IsNmNode>
+            <!--UInt32-->
+            <NmStationAddress>22</NmStationAddress>
+            <MessageDictTx>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>False</IsRbsEnable>
+                    <!--String-->
+                    <Name>NM_SCCM</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>1000</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>0</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>0</DelayTime>
+                    <!--UInt32-->
+                    <ID>1046</ID>
+                    <!--UInt32-->
+                    <Length>2</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>Cyclic</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_SCCM_ID</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>NM_SCCM_State</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>32</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                    </SignalDict>
+                </CanMessageConfig>
+                <CanMessageConfig>
+                    <!--Boolean-->
+                    <IsRbsEnable>True</IsRbsEnable>
+                    <!--String-->
+                    <Name>SCCM_ACC_E2E_PR2</Name>
+                    <!--String-->
+                    <Comment />
+                    <!--[ms]UInt16-->
+                    <CycleTime>20</CycleTime>
+                    <!--[ms]UInt16-->
+                    <CycleTimeActive>0</CycleTimeActive>
+                    <!--[ms]Int16-->
+                    <DelayTime>10</DelayTime>
+                    <!--UInt32-->
+                    <ID>315</ID>
+                    <!--UInt32-->
+                    <Length>12</Length>
+                    <!--UInt16-->
+                    <NrOfRepetitions>0</NrOfRepetitions>
+                    <!--Possible Values: Cyclic, Spontaneous, CyclicIfActive, SpontaneousWithDelay, CyclicAndSpontaneous, CyclicAndSpontaneousWD, SpontaneousWithRepetition, CyclicIfActiveAndSpontaneousWD, CyclicIfActiveFast, EventAndPeriodic, -->
+                    <SendType>CyclicAndSpontaneousWD</SendType>
+                    <SignalDict>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>SCCM_st_ACCOn</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>3</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>16</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>SCCM_st_ACCResume</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>3</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>24</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>SCCM_st_ACCDistDnRq</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>32</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>SCCM_st_ACCDistUpRq</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>40</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>SCCM_st_ACCSpdDn1</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>48</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>SCCM_st_ACCSpdDn10</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>56</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>SCCM_st_ACCSpdUp1</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>64</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalConfig>
+                            <!--String-->
+                            <Name>SCCM_st_ACCSpdUp10</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>3</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>0</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>72</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalConfig>
+                        <CanSignalChecksum>
+                            <!--Possible Values: ADD_AND_COMPLEMENT_TO_ONE, ADD_WITH_CARRY, J1850, J1850_USER, XOR, XOR_4BIT, HONDA_CRC_METHOD, CUSTOM_CHECKSUM, MAZDA_CHECKSUM, GAC_CHECKSUM, -->
+                            <ChecksumType>J1850</ChecksumType>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--String-->
+                            <Name>SCCM_ACC_E2E_PR2_CRC</Name>
+                            <!--UInt32-->
+                            <BitWidth>8</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>255</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>0</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalChecksum>
+                        <CanSignalRamp>
+                            <!--Boolean-->
+                            <IsDefaultActive>False</IsDefaultActive>
+                            <!--Possible Values: Up, Down, -->
+                            <Direction>Up</Direction>
+                            <!--Possible Values: SawtoothRamp, SawtoothRampWithOverflowBit, TriangleRamp, -->
+                            <Mode>SawtoothRamp</Mode>
+                            <!--Int32-->
+                            <NumberOfFlanks>0</NumberOfFlanks>
+                            <!--Int32-->
+                            <RampSum>0</RampSum>
+                            <!--Int32-->
+                            <UpdateRate>1</UpdateRate>
+                            <!--String-->
+                            <Name>SCCM_ACC_E2E_PR2_MC</Name>
+                            <!--UInt32-->
+                            <BitWidth>4</BitWidth>
+                            <!--String-->
+                            <Comment />
+                            <!--Possible Values: dbcsdtUInt, dbcsdtInt, dbcsdtFloat, dbcsdtDouble, -->
+                            <DataType>dbcsdtUInt</DataType>
+                            <!--Double-->
+                            <DefaultValue>0</DefaultValue>
+                            <!--Boolean-->
+                            <IsIntel>True</IsIntel>
+                            <!--Double-->
+                            <Max>15</Max>
+                            <!--Double-->
+                            <Min>0</Min>
+                            <!--UInt32-->
+                            <StartBit>8</StartBit>
+                            <!--String-->
+                            <Unit />
+                        </CanSignalRamp>
+                    </SignalDict>
+                </CanMessageConfig>
+            </MessageDictTx>
+        </CanNodeConfig>
+    </NodeDict>
+</CanNetworkConfig>
