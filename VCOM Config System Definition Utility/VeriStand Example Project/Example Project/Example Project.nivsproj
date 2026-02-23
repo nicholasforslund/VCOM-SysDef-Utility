@@ -201,15 +201,6 @@
 				</Properties>
 				<Errors />
 			</Section>
-			<Section Name="EngineDemo_windows.vsmodel" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="b6c89afc-8239-4563-b170-867a127245c0">
-				<Description />
-				<Properties>
-					<Property Name="Path">
-						<String>C:\Users\Public\Documents\National Instruments\NI VeriStand 2025\Examples\Stimulus Profile\Engine Demo\Model\EngineDemo_windows.vsmodel</String>
-					</Property>
-				</Properties>
-				<Errors />
-			</Section>
 			<Section Name="Embedded Data Logger Engine Linux64.llb" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="a879f72a-fc10-47f1-86bc-e80b9035553a">
 				<Description />
 				<Properties>
