@@ -1,0 +1,48 @@
+2026-02-23 08:45:21:  Info: Starting PROVEtech:RE at 2026-02-23 08:45:21
+2026-02-23 08:45:21:  Info: Start RE_InitOffline()...
+2026-02-23 08:45:21:  Info: RE_InitOffline: RC_Init
+2026-02-23 08:45:21:  Info: Firmware (Code: 0): Path added: C:\Program Files\National Instruments\NI-VCOM\Win64
+2026-02-23 08:45:21:  Info: Firmware (Code: 0): Path added: C:\Program Files\National Instruments\NI-VCOM\Win64
+2026-02-23 08:45:21:  Info: Firmware (Code: 0): Path added: C:\Program Files\National Instruments\NI-VCOM\Win64
+2026-02-23 08:45:21:  Info: Firmware (Code: 0): Path added: C:\Program Files\National Instruments\NI-VCOM\Win64
+2026-02-23 08:45:21:  Info: Firmware (Code: 0): Path added: C:\Program Files\National Instruments\NI-VCOM\Win64
+2026-02-23 08:45:21:  Info: CAN_Sender (Code: 0): NWDescriptor is "VCOM_Example_CAN_FD.dbc"
+2026-02-23 08:45:21:  Info: ESP (Code: 0): NWDescriptor is "VCOM_Example_CAN_FD.dbc"
+2026-02-23 08:45:21:  Info: System (Code: 0): RC_CModelCom is not configured and PROVEtech:RE starts without communication to PROVEtech:TA
+2026-02-23 08:45:21:  Info: Core (Code: 0): Core initialized
+2026-02-23 08:45:21:  Info: RC_Init (Code: 0): Core initialized
+2026-02-23 08:45:21:  Info: ESP_Tx (Code: 0): Player "ESP_Tx" started up
+2026-02-23 08:45:21:  Info: CAN_Sender_Tx (Code: 0): Player "CAN_Sender_Tx" started up
+2026-02-23 08:45:21:  Info: ESP_Rx (Code: 0): Player "ESP_Rx" started up
+2026-02-23 08:45:21:  Info: CAN_Sender_Rx (Code: 0): Player "CAN_Sender_Rx" started up
+2026-02-23 08:45:21:  Info: ESP (Code: 0): Player "ESP" started up
+2026-02-23 08:45:21:  Info: CAN_Sender (Code: 0): Player "CAN_Sender" started up
+2026-02-23 08:45:21:  Info: NIXNetCAN (Code: 0): Player "NIXNetCAN" started up
+2026-02-23 08:45:21:  Info: System (Code: 0): Player "System" started up
+2026-02-23 08:45:21:  Warning: SysClock (Code: 0): Not started, hence cannot shutdown
+2026-02-23 08:45:21:  Warning: Idle (Code: 0):  Not started, hence cannot shutdown
+2026-02-23 08:45:21:  Info: ESP (Code: 0): Player "ESP" shutdown
+2026-02-23 08:45:21:  Info: CAN_Sender (Code: 0): Player "CAN_Sender" shutdown
+2026-02-23 08:45:21:  Info: ESP_Rx (Code: 0): Player "ESP_Rx" shutdown
+2026-02-23 08:45:21:  Info: ESP_Tx (Code: 0): Player "ESP_Tx" shutdown
+2026-02-23 08:45:21:  Info: CAN_Sender_Rx (Code: 0): Player "CAN_Sender_Rx" shutdown
+2026-02-23 08:45:21:  Info: CAN_Sender_Tx (Code: 0): Player "CAN_Sender_Tx" shutdown
+2026-02-23 08:45:21:  Info: NIXNetCAN (Code: 0): Player "NIXNetCAN" shutdown
+2026-02-23 08:45:21:  Info: System (Code: 0): Player "System" shutdown
+2026-02-23 08:45:21:  Info: EventManager (Code: 0): Player "EventManager" shutdown
+2026-02-23 08:45:21:  Info: Core (Code: 0): Core shutdown
+2026-02-23 08:45:21:  Info: RC_Shutdown (Code: 0): Core shutdown
+2026-02-23 08:45:21:  Info: ESP (Code: 0): Player "ESP" destroyed
+2026-02-23 08:45:21:  Info: CAN_Sender (Code: 0): Player "CAN_Sender" destroyed
+2026-02-23 08:45:21:  Info: ESP_Rx (Code: 0): Player "ESP_Rx" destroyed
+2026-02-23 08:45:21:  Info: ESP_Tx (Code: 0): Player "ESP_Tx" destroyed
+2026-02-23 08:45:21:  Info: CAN_Sender_Rx (Code: 0): Player "CAN_Sender_Rx" destroyed
+2026-02-23 08:45:21:  Info: CAN_Sender_Tx (Code: 0): Player "CAN_Sender_Tx" destroyed
+2026-02-23 08:45:21:  Info: SysClock (Code: 0): Player "SysClock" destroyed
+2026-02-23 08:45:21:  Info: Idle (Code: 0): Player "Idle" destroyed
+2026-02-23 08:45:21:  Info: NIXNetCAN (Code: 0): Player "NIXNetCAN" destroyed
+2026-02-23 08:45:21:  Info: System (Code: 0): Player "System" destroyed
+2026-02-23 08:45:21:  Info: EventManager (Code: 0): Player "EventManager" destroyed
+2026-02-23 08:45:21:  Info: Core (Code: 0): Core and players terminated
+2026-02-23 08:45:21:  Info: RC_Terminate (Code: 0): Core terminated
+2026-02-23 08:45:21:  Error: Custom Device:  (Code: 0): 

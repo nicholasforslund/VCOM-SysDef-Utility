@@ -192,42 +192,6 @@
 			<Description />
 			<Properties />
 			<Errors />
-			<Section Name="Example Project.nivssdf" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="759ae196-a32b-4d4c-a329-a1d5de8a9954">
-				<Description />
-				<Properties>
-					<Property Name="Path">
-						<String>C:\Users\Nick\Desktop\VCOM Config System Definition Utility\VeriStand Example Project\Example Project\Example Project.nivssdf</String>
-					</Property>
-				</Properties>
-				<Errors />
-			</Section>
-			<Section Name="Example Project.nivsscreen" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="8a9db572-ab5e-4765-917b-f66a15b317b3">
-				<Description />
-				<Properties>
-					<Property Name="Path">
-						<String>C:\Users\Nick\Desktop\VCOM Config System Definition Utility\VeriStand Example Project\Example Project\Example Project.nivsscreen</String>
-					</Property>
-				</Properties>
-				<Errors />
-			</Section>
-			<Section Name="Example Project.nivsprj" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="6a03c130-ee78-4877-b280-e3b513ad5e69">
-				<Description />
-				<Properties>
-					<Property Name="Path">
-						<String>C:\Users\Nick\Desktop\VCOM Config System Definition Utility\VeriStand Example Project\Example Project\Example Project.nivsprj</String>
-					</Property>
-				</Properties>
-				<Errors />
-			</Section>
-			<Section Name="Example Project.nivscf" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="6a9486e5-e495-4665-8e0d-d4099c746dca">
-				<Description />
-				<Properties>
-					<Property Name="Path">
-						<String>C:\Users\Nick\Desktop\VCOM Config System Definition Utility\VeriStand Example Project\Example Project\Example Project.nivscf</String>
-					</Property>
-				</Properties>
-				<Errors />
-			</Section>
 			<Section Name="NI VCOM Engine Linux64.llb" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="5d223db4-bdf9-4d80-8c83-d003eb3d9d59">
 				<Description />
 				<Properties>
@@ -251,6 +215,42 @@
 				<Properties>
 					<Property Name="Path">
 						<String>C:\Users\Public\Documents\National Instruments\NI VeriStand 2025\Custom Devices\National Instruments\Embedded Data Logger\Linux_x64\Embedded Data Logger Engine Linux64.llb</String>
+					</Property>
+				</Properties>
+				<Errors />
+			</Section>
+			<Section Name="Example Project.nivssdf (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="19ef4f74-1cf9-4a7b-9e74-39af1d663cc0">
+				<Description />
+				<Properties>
+					<Property Name="Path">
+						<String>C:\dev\VCOM-SysDef-Utility\VCOM Config System Definition Utility\VeriStand Example Project\Example Project\Example Project.nivssdf</String>
+					</Property>
+				</Properties>
+				<Errors />
+			</Section>
+			<Section Name="Example Project.nivsscreen (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="99ba9bc3-edb5-4812-990d-9de4c2985ffb">
+				<Description />
+				<Properties>
+					<Property Name="Path">
+						<String>C:\dev\VCOM-SysDef-Utility\VCOM Config System Definition Utility\VeriStand Example Project\Example Project\Example Project.nivsscreen</String>
+					</Property>
+				</Properties>
+				<Errors />
+			</Section>
+			<Section Name="Example Project.nivsprj (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="96eb651e-4d31-406d-9597-540dc39bbf47">
+				<Description />
+				<Properties>
+					<Property Name="Path">
+						<String>C:\dev\VCOM-SysDef-Utility\VCOM Config System Definition Utility\VeriStand Example Project\Example Project\Example Project.nivsprj</String>
+					</Property>
+				</Properties>
+				<Errors />
+			</Section>
+			<Section Name="Example Project.nivscf (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666" Identifier="7b033933-6a9d-474b-8ab9-092373f33754">
+				<Description />
+				<Properties>
+					<Property Name="Path">
+						<String>C:\dev\VCOM-SysDef-Utility\VCOM Config System Definition Utility\VeriStand Example Project\Example Project\Example Project.nivscf</String>
 					</Property>
 				</Properties>
 				<Errors />
